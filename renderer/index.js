@@ -1,6 +1,4 @@
-'use strict'
-
-const { ipcRenderer } = require('electron')
+const {ipcRenderer} = require('electron')
 
 // delete todo by its text value ( used below in event listener)
 const deleteTodo = (e) => {

@@ -1,6 +1,4 @@
-'use strict'
-
-const { BrowserWindow } = require('electron')
+const {BrowserWindow} = require('electron')
 
 // default window settings
 const defaultProps = {
@@ -10,9 +8,9 @@ const defaultProps = {
 }
 
 class Window extends BrowserWindow {
-  constructor ({ file, ...windowSettings }) {
+  constructor ({file, ...windowSettings}) {
     // calls new BrowserWindow with these props
-    super({ ...defaultProps, ...windowSettings })
+    super({...defaultProps, ...windowSettings})
 
     // load the html and open devtools
     this.loadFile(file)

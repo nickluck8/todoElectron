@@ -1,5 +1,3 @@
-'use strict'
-
 const Store = require('electron-store')
 
 class DataStore extends Store {
@@ -27,7 +25,7 @@ class DataStore extends Store {
 
   addTodo (todo) {
     // merge the existing todos with the new todo
-    this.todos = [ ...this.todos, todo ]
+    this.todos = [...this.todos, todo]
 
     return this.saveTodos()
   }
